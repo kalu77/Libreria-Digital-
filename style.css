@@ -1,0 +1,495 @@
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(pink, rgb(255, 255, 255), black);
+}
+header {
+  position: fixed;
+  width: 100%;
+  height: fit-content;
+  z-index: 10000000;
+  opacity: 300%;
+}
+nav {
+  display: flex !important;
+  justify-content: space-between;
+  padding: 0 10px 0 10px;
+  background-color: rgb(23, 1, 41);
+}
+nav a {
+  text-shadow: 2px 3px 4px rgb(121, 121, 121);
+  color: rgb(255, 255, 255);
+}
+#homemenu {
+  margin: 2px 16px 4px 3px;
+  font-family: "MuseoModerno", Arial;
+}
+
+.fuente {
+  font-family: "MuseoModerno", Arial;
+}
+
+.formcontainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.col2 {
+  border: 4px double rgb(247, 142, 200);
+  padding: 41px;
+  color: whitesmoke;
+  font-weight: bold;
+  /* background-color: pink; */
+  background: linear-gradient(to right, rgb(209, 176, 182), rgb(252, 146, 164));
+}
+
+.col1 {
+  background-image: url(https://previews.123rf.com/images/maxxyustas/maxxyustas1510/maxxyustas151000027/47274543-concepto-de-la-educaci%C3%B3n-libros-y-libros-de-texto-sobre-la-estanter%C3%ADa-3d.jpg);
+  background-size: cover;
+  transform: rotate(180deg);
+}
+.col3 {
+  background-image: url(https://previews.123rf.com/images/maxxyustas/maxxyustas1510/maxxyustas151000027/47274543-concepto-de-la-educaci%C3%B3n-libros-y-libros-de-texto-sobre-la-estanter%C3%ADa-3d.jpg);
+  background-size: cover;
+}
+
+.jumbotron {
+  background-image: url();
+  margin-bottom: 0px !important;
+  text-align: center;
+}
+
+#buttonprod {
+  color: black;
+}
+#buttonprod:hover {
+  color: whitesmoke;
+}
+
+.logoswrap {
+  text-align: center;
+}
+
+.logosjt {
+  font-size: 42px;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 2px rgb(255, 255, 255);
+  /* margin-right: 22px; */
+}
+.logosjt:hover {
+  text-decoration: none;
+}
+
+/* Seccion novedades */
+#titulo {
+  background-image: url();
+  margin-bottom: 0px !important;
+  text-align: center;
+  color:rgb(0, 0, 0)
+}
+
+
+/* PRODUCTS */
+
+#products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(121, 28, 28);
+}
+#card2 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.containerProd {
+  position: relative;
+}
+
+.containerProd .card {
+  position: relative;
+  width: 350px;
+  height: 450px;
+  background: rgb(255, 202, 202);
+  border-radius: 80px;
+  overflow: hidden;
+}
+
+
+/* Posicion de imagen en las card  */
+
+.containerProd .card .imgBx img {
+  height: 250px;
+  /*  */
+  position: absolute;
+  top: 80%;
+  left: 40%;
+  transform: translate(-50%, -50%) rotate(-2deg);
+}
+
+/* Movimiento de imagen en las card  */
+
+.containerProd .card .imgBx {
+  position: absolute;
+  top: 10%;
+  transform: translateY(50%);
+  z-index: 10000;
+  width: 100%;
+  height: 220px;
+  transition: 0.5s;
+}
+
+.containerProd .card:hover .imgBx {
+  top: 0%;
+  transform: translateY(0%);
+}
+
+/* diseño de texto dentro de las card  */
+
+.containerProd .card .contentBx {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+}
+
+.containerProd .card:hover .contentBx {
+  height: 150px;
+}
+
+.containerProd .card .contentBx h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: rgb(73, 73, 73)31); 
+  font-family: "arial";
+}
+
+.containerProd .card .contentBx .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.containerProd .card .contentBx a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: rgb(0, 0, 0)71, 10, 10);
+  border-radius: 14px;
+  margin-top: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.5s;
+}
+
+.containerProd .card:hover .contentBx a {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.75s;
+}
+
+/* seccion 2 */
+
+
+
+
+#recomendados {
+  background-image: url();
+  margin-bottom: 0px !important;
+  text-align: center;
+  color:rgb(0, 0, 0)
+}
+
+#libros_recomendados {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(102, 114, 155);
+}
+
+.containerLibr {
+  position: relative;
+}
+
+.containerLibr .card {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: rgb(255, 202, 202);
+  border-radius: 80px;
+  overflow: hidden;
+}
+
+
+/* Posicion de imagen en las card  */
+
+.containerLibr .card .imgBx img {
+  height: 250px;
+  /*  */
+  position: absolute;
+  top: 80%;
+  left: 40%;
+  transform: translate(-50%, -50%) rotate(-2deg);
+}
+
+/* Movimiento de imagen en las card  */
+
+.containerLibr .card .imgBx {
+  position: absolute;
+  top: 10%;
+  transform: translateY(50%);
+  z-index: 10000;
+  width: 100%;
+  height: 220px;
+  transition: 0.5s;
+}
+
+.containerLibr .card:hover .imgBx {
+  top: 0%;
+  transform: translateY(0%);
+}
+
+/* diseño de texto dentro de las card  */
+
+.containerLibr .card .contentBx {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+}
+
+.containerLibr .card:hover .contentBx {
+  height: 130px;
+}
+
+.containerLibr .card .contentBx h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: rgb(73, 73, 73)31); 
+  font-family: "arial";
+}
+
+.containerLibr .card .contentBx .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.containerLibr .card .contentBx a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: rgb(0, 0, 0)71, 10, 10);
+  border-radius: 14px;
+  margin-top: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.5s;
+}
+
+.containerLibr .card:hover .contentBx a {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.75s;
+}
+
+/* seccion 3 */
+
+#leidos {
+  margin-bottom: 0px !important;
+  text-align: center;
+  color:rgb(0, 0, 0)
+}
+
+#mas_leidos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(121, 28, 28);
+}
+
+.containerLeidos {
+  position: relative;
+}
+
+.containerLeidos .card {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: rgb(221, 133, 133);
+  border-radius: 80px;
+  overflow: hidden;
+}
+
+
+/* Posicion de imagen en las card  */
+
+.containerLeidos .card .imgBx img {
+  height: 250px;
+  /*  */
+  position: absolute;
+  top: 80%;
+  left: 40%;
+  transform: translate(-50%, -50%) rotate(-2deg);
+}
+
+/* Movimiento de imagen en las card  */
+
+.containerLeidos .card .imgBx {
+  position: absolute;
+  top: 10%;
+  transform: translateY(50%);
+  z-index: 10000;
+  width: 100%;
+  height: 220px;
+  transition: 0.5s;
+}
+
+.containerLeidos .card:hover .imgBx {
+  top: 0%;
+  transform: translateY(0%);
+}
+
+/* diseño de texto dentro de las card  */
+
+.containerLeidos .card .contentBx {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+}
+
+.containerLeidos .card:hover .contentBx {
+  height: 130px;
+}
+
+.containerLeidos .card .contentBx h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: rgb(73, 73, 73)31); 
+  font-family: "arial";
+}
+
+.containerLeidos .card .contentBx .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.containerLeidos .card .contentBx a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: rgb(0, 0, 0)71, 10, 10);
+  border-radius: 14px;
+  margin-top: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.5s;
+}
+
+.containerLeidos .card:hover .contentBx a {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.75s;
+}
+
+/* RESPONSIVE */
+
+/* // Extra small devices (portrait phones, less than 576px)*/
+@media only screen and (max-width: 576px) {
+  #all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section {
+    width: 100%;
+    height: auto;
+  }
+
+  #banner {
+    height: 100%;
+    padding-top: 70px;
+  }
+
+  #banner h1 {
+    font-size: 5rem;
+  }
+
+  #banner h4 {
+    font-size: 1.1rem;
+    margin-top: 150px;
+  }
+
+  .col1,
+  .col3 {
+    display: none;
+  }
+
+  .formcontainer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    font-size: 10px;
+  }
+
+  #homemenu h3 {
+    font-size: 12px;
+  }
+
+  .containerProd .card {
+    position: relative;
+    width: 260px;
+    height: 450px;
+    background: grey;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+}
